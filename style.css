@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -25,6 +25,7 @@
   height: 560px;
   /* background-color: red;1 */
 }
+
 .output {
   height: 40px;
   background-color: white;
@@ -35,7 +36,13 @@
   font-weight: bold;
   text-align: right;
   color: rgb(82, 81, 81);
+  overflow-x: scroll;
 }
+
+.output::-webkit-scrollbar{
+  display: none;
+}
+
 button {
   width: 50px;
   height: 50px;
@@ -45,15 +52,23 @@ button {
   font-weight: bold;
   font-size: 20px;
 }
+
 .btn {
   background-color: yellow;
 }
+
 .btn1 {
   width: 120px;
   font-size: 25px;
   padding-right: 40px;
   font-weight: bold;
+  margin-left: 46px;
 }
+
 .btn2 {
   margin-left: 41px;
+}
+
+.btnEqu {
+  margin-left: 32px;
 }
